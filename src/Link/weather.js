@@ -8,19 +8,19 @@ export default (props) => {
   <thead>
     <tr>
       <th onClick={props.onSort.bind(null, 'id')}>
-          #ID { props.sortField === 'id' ? <small>{props.sort}</small> : null}
+          #ID { props.sortField === 'id' ? (<small>{props.sort}</small>) : null}
       </th>
       <th onClick={props.onSort.bind(null, 'firstName')}>
-          FirstName { props.sortField === 'firstName' ? <small>{props.sort}</small> : null}
+          FirstName { props.sortField === 'firstName' ? (<small>{props.sort}</small>) : null}
       </th>
       <th onClick={props.onSort.bind(null, 'lastName')}>
-          LastName { props.sortField === 'lastName' ? <small>{props.sort}</small> : null}
+          LastName { props.sortField === 'lastName' ? (<small>{props.sort}</small>) : null}
       </th>
       <th onClick={props.onSort.bind(null, 'email')}>
-          Email { props.sortField === 'email' ? <small>{props.sort}</small> : null}
+          Email { props.sortField === 'email' ? (<small>{props.sort}</small>) : null}
       </th>
       <th onClick={props.onSort.bind(null, 'phone')}>
-          Phone { props.sortField === 'phone' ? <small>{props.sort}</small> : null}
+          Phone { props.sortField === 'phone' ? (<small>{props.sort}</small>) : null}
       </th>
     </tr>
   </thead>
